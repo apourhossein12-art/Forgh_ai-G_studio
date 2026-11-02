@@ -1,0 +1,6 @@
+{
+  "name": "NONONICK Forge",
+  "description": "Production-oriented mobile-first cloud development environment for iPhone & Safari with isolated Python & Node.js execution, offline PWA storage, and bilingual support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

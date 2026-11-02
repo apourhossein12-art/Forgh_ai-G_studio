@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0c10" />
+      <stop offset="100%" stop-color="#141824" />
+    </linearGradient>
+    <linearGradient id="primary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background with safe zone -->
+  <rect width="512" height="512" rx="110" fill="url(#bg)" />
+  <rect width="504" height="504" x="4" y="4" rx="106" fill="none" stroke="#222736" stroke-width="4" />
+  
+  <!-- Terminal / Anvil Forge Emblem -->
+  <!-- Outer Hexagon / Anvil Frame -->
+  <path d="M 176 128 L 336 128 L 400 192 L 352 304 L 256 384 L 160 304 L 112 192 Z" 
+        fill="#121622" stroke="url(#primary)" stroke-width="12" stroke-linejoin="round" />
+        
+  <!-- Code bracket < / > symbol inside -->
+  <path d="M 200 216 L 160 256 L 200 296" fill="none" stroke="#38bdf8" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 312 216 L 352 256 L 312 296" fill="none" stroke="#8b5cf6" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Central Forge Core Spark / Slash -->
+  <line x1="272" y1="210" x2="240" y2="302" stroke="url(#accent)" stroke-width="14" stroke-linecap="round" />
+  
+  <!-- Core indicator dot -->
+  <circle cx="256" cy="168" r="12" fill="#38bdf8" />
+</svg>

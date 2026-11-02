@@ -1,0 +1,33 @@
+{
+  "id": "/",
+  "name": "NONONICK Forge",
+  "short_name": "Forge",
+  "description": "Production-oriented mobile-first cloud development environment for iPhone & Safari with isolated Python & Node.js execution, offline PWA storage, and bilingual support.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#0a0c10",
+  "background_color": "#0a0c10",
+  "categories": ["developer", "utilities", "productivity"],
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

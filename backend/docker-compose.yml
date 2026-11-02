@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  forge-api:
+    build:
+      context: ..
+      dockerfile: backend/Dockerfile
+    container_name: nononick-forge-api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - FORGE_API_SECRET=${FORGE_API_SECRET:-supersecret-forge-key-change-me}
+      - ALLOWED_ORIGINS=${ALLOWED_ORIGINS:-*}
+      - MAX_TIMEOUT_MS=30000
+    volumes:
+      # Mount Docker socket ONLY if container execution mode is desired on dedicated VPS
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    security_opt:
+      - no-new-privileges:true
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 2048M
+        reservations:
+          cpus: '0.5'
+          memory: 512M
